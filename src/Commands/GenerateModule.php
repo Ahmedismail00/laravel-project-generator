@@ -33,17 +33,11 @@ class GenerateModule extends Command
     public function handle()
     {        
         $modules_data = $this->loadModulesData(base_path(). DIRECTORY_SEPARATOR .'data');
-
         $director = new Director();
 
         foreach($modules_data as $module_data)
         {
-            if($module_data['request_type'] == 'api'){
-                $director->setBuilder(new ModuleBuilder($module_data));
-            }else{
-                // $director->setBuilder(new WebBuilder($module_data));
-            }
-
+            $director->setBuilder(new ModuleBuilder($module_data));
             $director->makeModule();
         }        
     }

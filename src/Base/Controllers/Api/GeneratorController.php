@@ -29,17 +29,12 @@ class GeneratorController extends Controller
     public function store()
     {
         $this->model = $this->model->create($this->request->validated());
-        return $this->sendResponse(
-            new $this->resource($this->model),
-            'successfully created.',
-            true,
-            201
-        );
+        return $this->sendResponse();
     }
 
     public function show($id)
     {
-        return $this->sendResponse(new $this->resource($this->model->findOrFail($id)));
+        return $this->sendResponse();
     }
 
     public function update($id)
@@ -48,7 +43,7 @@ class GeneratorController extends Controller
         $model->update($this->request->validated());
         $this->model = $model;
 
-        return $this->sendResponse(new $this->resource($model), 'successfully updated.');
+        return $this->sendResponse();
     }
 
     public function destroy($id)
@@ -58,6 +53,6 @@ class GeneratorController extends Controller
             return $this->ErrorMessage('not found.', 404);
         }
         $model->delete();
-        return $this->sendResponse([], 'successfully deleted.');
+        return $this->sendResponse();
     }
 }
