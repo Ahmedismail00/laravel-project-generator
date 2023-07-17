@@ -1,0 +1,28 @@
+{
+    "name": "a7md/the-generator",
+    "description":"",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TheGenerator\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "ahmedismail00",
+            "email": "ahmed.ismail11199@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra":{
+        "laravel":{
+            "providers":[
+                "A7md\\TheGenerator\\TheGeneratorServiceProvider"
+            ],
+            "aliases":{
+                "TheGenerator":"A7md\\TheGenerator\\Facades\\TheGenerator"
+            }
+        }
+    }
+}
