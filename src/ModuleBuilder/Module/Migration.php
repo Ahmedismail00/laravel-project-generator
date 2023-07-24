@@ -57,7 +57,7 @@ class Migration extends AbstarctComponent
         $module_fields = $this->getData()['fields'];
         $migration_fields = [];
         foreach ($module_fields as $field) {
-            if($field['options']){
+            if(isset($field['options'])){
                 if(is_array($field['options'])){
                     $migration_field = "$"."table->".$field['type']."('".$field['name']."')";
                     foreach($field['options'] as $key => $value){

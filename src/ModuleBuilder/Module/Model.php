@@ -41,7 +41,7 @@ class Model extends AbstarctComponent
 
     foreach ($fields as $field) {
       if (is_array($field['validation'])) {
-        if (array_key_exists("required", $field['validation'])) {
+        if (array_key_exists("required", $field['validation']) || in_array("required",$field['validation'])) {
           array_push($fillable, $field['name']);
         }
       } else {

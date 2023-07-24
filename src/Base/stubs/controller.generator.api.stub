@@ -4,7 +4,7 @@ namespace {{ namespace }};
 
 use {{ namespacedModel }} as Model;
 use App\Http\Requests\Api\{{model}}Request as FormRequest;
-use App\Http\Resources\Api\{{model}}Reques as Resource;
+use App\Http\Resources\Api\{{model}}Request as Resource;
 use TheGenerator\Base\Controllers\Api\GeneratorController;
 
 

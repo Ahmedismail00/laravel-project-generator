@@ -27,9 +27,10 @@ class Route extends AbstarctComponent
 
   public function setComponentData(): void
   {
+    // TODO :: put route name key and value in the module base file
     $route_name = lcfirst($this->getData()['name']);    
     $controller =  ucfirst($this->getData()['name']).'Controller::class';;    
-    $data = "Route::resource('" . $route_name . "'," . $controller .");";
+    $data = "Route::resource('" . $route_name . "s'," . $controller .");";
 
     // check if the route already exist
     if( strpos(file_get_contents($this->destination_file_path),$data) == false) {
