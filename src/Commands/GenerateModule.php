@@ -13,7 +13,7 @@ class GenerateModule extends Command
      *
      * @var string
      */
-    protected $signature = 'generator:module';
+    protected $signature = 'generator:modules';
 
     /**
      * The console command description.

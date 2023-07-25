@@ -97,6 +97,11 @@ You can install the package via composer:
     ],
     ];
 ```
+
+Then you need to run this command to start creating your modules files.
+```bash
+    php artisan generator:modules
+```
 ## Changelog
 
 Please see the CHANGELOG for more information on what has changed recently.
