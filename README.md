@@ -25,6 +25,7 @@ You can install the package via composer:
 - The files in `data` directory are used to generate module files. 
 - You need to add your own data in each file you gonna init.
 
+#### example file for module
 ```php
     return [
         "name" => "admin",
