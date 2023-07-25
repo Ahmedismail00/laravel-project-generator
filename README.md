@@ -89,20 +89,25 @@ You can install the package via composer:
 ```bash
 php artisan generator:modules
 ```
+
 ## Changelog
 
-Please see the CHANGELOG for more information on what has changed recently.
+Please see the [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
-Please review our security policy on how to report security vulnerabilities.
+Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
 ## Credits
 
+- [Ahmedismail00](https://github.com/Ahmedismail00)
+- [All Contributors](../../contributors)
+
 ## License
 
-The MIT License [MIT](https://choosealicense.com/licenses/mit/). Please see License File for more information.
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
