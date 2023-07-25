@@ -79,7 +79,7 @@ You can install the package via composer:
     ];
 ```
 
-Then you need to run this command to start creating your modules files.
+- Now you need to run this command to start creating your modules files.
 ```bash
 php artisan generator:modules
 ```
