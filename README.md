@@ -4,7 +4,7 @@
 ---
 
 ## About
-#### Develop faster and cleaner with this package.
+#### Develop faster and cleaner.
 This package is responsible for generating laravel essential files for starting your application. 
 
 You dont need to make make command for each file like contoller, model, ....etc.
