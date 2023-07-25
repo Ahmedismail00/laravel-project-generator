@@ -17,9 +17,9 @@ class Request extends AbstarctComponent
     {
         $request_name = ucfirst($this->getData()['name']);
         if ($this->getData()['request_type'] == 'api') {
-            Artisan::call('make:request Api/' . $request_name.'Request');
+            Artisan::call('generator:request Api/' . $request_name.'Request');
         } elseif ($this->getData()['request_type'] == 'web') {
-            Artisan::call('make:request Web/' . $request_name.'Request');
+            Artisan::call('generator:request Web/' . $request_name.'Request');
         }
         $this->setDestinationPath($request_name);
         $this->setComponentData();

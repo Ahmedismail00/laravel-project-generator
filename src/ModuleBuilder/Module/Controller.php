@@ -19,9 +19,9 @@ class Controller extends AbstarctComponent
     $controller_name = ucfirst($this->getData()['name']);
     // TODO : make custom controller for crud operations.
     if($this->getData()['request_type'] == 'api'){
-      Artisan::call('make:controller --type=generator Api/' . $controller_name.'Controller --api --resource --model='.$controller_name);
+      Artisan::call('generator:controller Api/' . $controller_name.'Controller --api --resource --model='.$controller_name);
     }elseif($this->getData()['request_type'] == 'web'){
-      Artisan::call('make:controller --type=generator Web/' . $controller_name.'Controller --resource --model='.$controller_name);
+      Artisan::call('generator:controller Web/' . $controller_name.'Controller --resource --model='.$controller_name);
     }
     
     $this->setDestinationPath($controller_name);

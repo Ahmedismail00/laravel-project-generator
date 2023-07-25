@@ -16,7 +16,7 @@ class Model extends AbstarctComponent
   public function Build(): void
   {
     $model_name = ucfirst($this->getData()['name']);
-    Artisan::call('make:model ' . $model_name);
+    Artisan::call('generator:model ' . $model_name);
     $this->setDestinationPath($model_name);
     $this->setComponentData();
   }
@@ -41,7 +41,7 @@ class Model extends AbstarctComponent
 
     foreach ($fields as $field) {
       if (is_array($field['validation'])) {
-        if (array_key_exists("required", $field['validation']) || in_array("required",$field['validation'])) {
+        if (array_key_exists("required", $field['validation'])) {
           array_push($fillable, $field['name']);
         }
       } else {

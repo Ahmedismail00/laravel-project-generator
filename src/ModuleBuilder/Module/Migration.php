@@ -26,7 +26,7 @@ class Migration extends AbstarctComponent
         }
 
         if(!$file_exist){
-            Artisan::call('make:migration Create' . $migration_name . 'sTable');
+            Artisan::call('generator:migration create_' . lcfirst($migration_name) . 's_table --create='.lcfirst($migration_name).' --table='.lcfirst($migration_name).'s');
             $this->setDestinationPath($destination_file_name);
             $this->setComponentData();
         }

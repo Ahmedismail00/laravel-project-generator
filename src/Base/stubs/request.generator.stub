@@ -13,7 +13,7 @@ class {{ class }} extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return false;
     }
 
     /**
@@ -25,9 +25,6 @@ class {{ class }} extends FormRequest
     {
         switch ($this->method()) {
             case 'GET':
-            case 'DELETE':{
-                    return [];
-                }
             case 'POST':{
                     return [
 #POSTRULES#
@@ -43,8 +40,6 @@ class {{ class }} extends FormRequest
 
     public function messages()
     {
-        return [
-            
-        ];
+        //
     }
 }

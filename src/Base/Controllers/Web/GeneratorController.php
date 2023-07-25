@@ -50,6 +50,7 @@ class GeneratorController extends Controller
 
         DB::commit();
         // TODO:: LOG AND FLUSH MESSAGE
+        // session()->flash('success', __('تم الإضافة'));
         return redirect(route($this->route_name.'.index'));
 
     }
@@ -81,8 +82,8 @@ class GeneratorController extends Controller
         }
 
         DB::commit();
-
         // TODO:: LOG AND FLUSH MESSAGE
+        // session()->flash('success', __('تم الإضافة'));
         return redirect(route($this->route_name.'.index'));
     }
 
@@ -99,8 +100,8 @@ class GeneratorController extends Controller
         }
     
         DB::commit();
-        
-        // TODO:: LOG AND FLUSH MESSAGE
+                // TODO:: LOG AND FLUSH MESSAGE
+        // session()->flash('success', __('تم الإضافة'));
         return redirect(route($this->route_name.'.index'));
     }
 }
