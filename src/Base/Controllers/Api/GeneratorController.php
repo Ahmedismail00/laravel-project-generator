@@ -12,25 +12,23 @@ class GeneratorController extends Controller
     use SendResponse;
     protected $request;
     protected $model;
-    protected $resource;
     
-    public function __construct(FormRequest $request, Model $model, $resource)
+    public function __construct(FormRequest $request, Model $model)
     {
         $this->request = $request;
         $this->model = $model;
-        $this->resource = $resource;
     }
 
     public function index()
     {
-        return $this->sendResponse($this->resource::collection($this->model->paginate($this->request->per_page ?? 10)));
+        return $this->sendResponse([]);
     } 
 
     public function store()
     {
         $this->model = $this->model->create($this->request->validated());
         return $this->sendResponse(
-            new $this->resource($this->model),
+            [],
             'successfully created.',
             true,
             201
@@ -39,7 +37,7 @@ class GeneratorController extends Controller
 
     public function show($id)
     {
-        return $this->sendResponse(new $this->resource($this->model->findOrFail($id)));
+        return $this->sendResponse([]);
     }
 
     public function update($id)
@@ -48,7 +46,7 @@ class GeneratorController extends Controller
         $model->update($this->request->validated());
         $this->model = $model;
 
-        return $this->sendResponse(new $this->resource($model), 'successfully updated.');
+        return $this->sendResponse([]);
     }
 
     public function destroy($id)

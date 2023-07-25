@@ -1,20 +1,37 @@
 {
-    "name": "a7md/the-generator",
+    "name": "Ahmed/larave-project-generator",
     "description":"",
+    "keywords": [
+        "laravel",
+        "mvc",
+        "generate-laravel-project",
+        "laravel-generate",
+        "generate-controller",
+        "generate-module",
+        "generate-resource",
+        "auto-generate",
+        "auto-build"
+
+    ],
+    "homepage": "https://github.com/Ahmedismail00/laravel-project-generator",
     "type": "library",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "ahmedismail00",
+            "email": "ahmed.ismail11199@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "TheGenerator\\": "src"
         }
     },
-    "authors": [
-        {
-            "name": "ahmedismail00",
-            "email": "ahmed.ismail11199@gmail.com"
-        }
-    ],
-    "require": {},
+    
+    "require": {
+        "php": "^8.2"
+    },
     "extra":{
         "laravel":{
             "providers":[

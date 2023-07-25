@@ -4,7 +4,6 @@ namespace {{ namespace }};
 
 use {{ namespacedModel }} as Model;
 use App\Http\Requests\Api\{{model}}Request as FormRequest;
-use App\Http\Resources\Api\{{model}}Reques as Resource;
 use TheGenerator\Base\Controllers\Api\GeneratorController;
 
 
@@ -14,8 +13,8 @@ class {{ class }} extends GeneratorController
     protected $model;
     protected $resource;
 
-    public function __construct(FormRequest $request, Model $model, $resource = Resource::class)
+    public function __construct(FormRequest $request, Model $model)
     {
-        parent::__construct($request, $model, $resource);
+        parent::__construct($request, $model);
     }
 }
