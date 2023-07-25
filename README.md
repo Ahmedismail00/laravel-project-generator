@@ -25,21 +25,10 @@ You can install the package via composer:
 - You need to add your own data in each file you gonna init.
 
 ```php
-
     return [
         "name" => "admin",
         "request_type" => "api",
         "fields" => [
-        [
-            "name"=>"name",
-            "type"=>"string",
-            "options"=>[
-                "nullable",
-            ],
-            "validation"=>[
-                "required",
-            ]
-        ],
         [
             "name"=>"age",
             "type"=>"integer",
@@ -51,19 +40,11 @@ You can install the package via composer:
             ]
         ],
         [
-            "name"=>"email",
-            "type"=>"string",
-            "options"=>[
-                "nullable",
-            ],
-            "validation"=>"email",
-        ],
-        [
             "name"=>"phone",
             "type"=>"string",
             "options"=>[
-                "nullable"=>"ahmed",
-                "default"
+                "default",
+                "nullable",
             ],
             "validation"=>[
                 "required",
@@ -100,7 +81,7 @@ You can install the package via composer:
 
 Then you need to run this command to start creating your modules files.
 ```bash
-    php artisan generator:modules
+php artisan generator:modules
 ```
 ## Changelog
 
