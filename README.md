@@ -1,4 +1,4 @@
-# Laravel Project Generator
+# Laravel MVC Project Generator
 
 
 ---
@@ -80,6 +80,9 @@ You can install the package via composer:
 ```
 
 - Now you need to run this command to start creating your modules files.
+
+- The command will also create the module files in `app/Http/Controllers` and `app/Models` and `database/migrations` and `app/Http/Resources` and `routes/api.php` or `routes/web.php` based on `request_type`.
+
 ```bash
 php artisan generator:modules
 ```
