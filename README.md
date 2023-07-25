@@ -15,7 +15,7 @@ It's only one command and you are ready to start your application.
 
 You can install the package via composer:
 ```bash
- composer require pi-space/notion-api-integration
+ composer require Isayama3/laravel-app-generator
 ```
 
 ## Usage
