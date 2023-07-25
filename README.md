@@ -20,6 +20,7 @@ You can install the package via composer:
 
 ## Usage
 
+### Init module data
 - After installing the package. There is a generated folder called `data` in our base bath directory with an example file for a module.
 - The files in `data` directory are used to generate module files. 
 - You need to add your own data in each file you gonna init.
@@ -78,6 +79,7 @@ You can install the package via composer:
     ],
     ];
 ```
+### Generate module files
 
 - Now you need to run this command to start creating your modules files.
 
