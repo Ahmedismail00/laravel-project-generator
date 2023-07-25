@@ -25,59 +25,59 @@ You can install the package via composer:
 - The files in `data` directory are used to generate module files. 
 - You need to add your own data in each file you gonna init.
 
-#### example file for module
+#### example file for an admin module
 ```php
     return [
         "name" => "admin",
         "request_type" => "api",
         "fields" => [
-        [
-            "name"=>"age",
-            "type"=>"integer",
-            "options"=>[
-                "nullable",
+            [
+                "name"=>"age",
+                "type"=>"integer",
+                "options"=>[
+                    "nullable",
+                ],
+                "validation"=>[
+                    "required",
+                ]
             ],
-            "validation"=>[
-                "required",
+            [
+                "name"=>"phone",
+                "type"=>"string",
+                "options"=>[
+                    "default",
+                    "nullable",
+                ],
+                "validation"=>[
+                    "required",
+                    "max:255",
+                ]
+            ],
+            [
+                "name"=>"password",
+                "type"=>"string",
+                "options"=>[
+                    "nullable",
+                ],
+                "validation"=>[
+                    "required",
+                    "max:255",
+                    "password"
+                ]
             ]
         ],
-        [
-            "name"=>"phone",
-            "type"=>"string",
-            "options"=>[
-                "default",
-                "nullable",
+        "relations" => [
+            [
+                "relation_name"=>"orders",
+                "relation_type"=>"hasMany",
+                "relation_model"=>"order",
             ],
-            "validation"=>[
-                "required",
-                "max:255",
-            ]
-        ],
-        [
-            "name"=>"password",
-            "type"=>"string",
-            "options"=>[
-                "nullable",
+            [
+                "relation_name"=>"emails",
+                "relation_type"=>"hasMany",
+                "relation_model"=>"email",
             ],
-            "validation"=>[
-                "required",
-                "max:255",
-                "password"
-            ]
-        ]
-    ],
-    "relations" => [
-        [
-            "relation_name"=>"orders",
-            "relation_type"=>"hasMany",
-            "relation_model"=>"order",
         ],
-        [
-            "relation_name"=>"emails",
-            "relation_type"=>"hasMany",
-            "relation_model"=>"email",
-        ],
-    ],
     ];
 ```
 ### Generate module files
