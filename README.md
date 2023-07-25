@@ -1,4 +1,4 @@
-# Laravel MVC Project Generator
+# Laravel App Generator
 
 
 ---
