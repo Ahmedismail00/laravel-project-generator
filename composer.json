@@ -35,10 +35,10 @@
     "extra":{
         "laravel":{
             "providers":[
-                "A7md\\TheGenerator\\TheGeneratorServiceProvider"
+                "Isayama3\\TheGenerator\\TheGeneratorServiceProvider"
             ],
             "aliases":{
-                "TheGenerator":"A7md\\TheGenerator\\Facades\\TheGenerator"
+                "TheGenerator":"Isayama3\\TheGenerator\\Facades\\TheGenerator"
             }
         }
     }
