@@ -4,6 +4,9 @@ namespace Isayama3\TheGenerator;
 use Isayama3\TheGenerator\Commands\InitGenerator;
 use Isayama3\TheGenerator\Commands\LaunchGenerator;
 use Isayama3\TheGenerator\Commands\MakeGeneratorController;
+use Isayama3\TheGenerator\Commands\MakeGeneratorMigration;
+use Isayama3\TheGenerator\Commands\MakeGeneratorModel;
+use Isayama3\TheGenerator\Commands\MakeGeneratorRequest;
 use Illuminate\Support\ServiceProvider;
 
 class TheGeneratorServiceProvider extends ServiceProvider
