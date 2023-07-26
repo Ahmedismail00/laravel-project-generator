@@ -36,10 +36,7 @@
         "laravel":{
             "providers":[
                 "Isayama3\\TheGenerator\\TheGeneratorServiceProvider"
-            ],
-            "aliases":{
-                "TheGenerator":"Isayama3\\TheGenerator\\Facades\\TheGenerator"
-            }
+            ]
         }
     }
 }

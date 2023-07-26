@@ -1,4 +1,5 @@
 <?php
+namespace Isayama3\TheGenerator;
 
 use App\Console\Commands\InitGenerator;
 use App\Console\Commands\LaunchGenerator;
