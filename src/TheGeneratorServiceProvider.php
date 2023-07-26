@@ -9,6 +9,14 @@ use Illuminate\Support\ServiceProvider;
 class TheGeneratorServiceProvider extends ServiceProvider
 {
     /**
+     * Register any package services.
+     */
+    public function registe(): void
+    {
+        $this->app->register(Isayama3\TheGenerator\TheGeneratorServiceProvider::class);
+
+    }
+    /**
      * Bootstrap any package services.
      */
     public function boot(): void
