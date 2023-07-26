@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Isayama3\TheGenerator\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Migrations\MigrationCreator;

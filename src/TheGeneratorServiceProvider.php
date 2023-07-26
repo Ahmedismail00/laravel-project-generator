@@ -1,9 +1,9 @@
 <?php
 namespace Isayama3\TheGenerator;
 
-use App\Console\Commands\InitGenerator;
-use App\Console\Commands\LaunchGenerator;
-use App\Console\Commands\MakeGeneratorController;
+use Isayama3\TheGenerator\Commands\InitGenerator;
+use Isayama3\TheGenerator\Commands\LaunchGenerator;
+use Isayama3\TheGenerator\Commands\MakeGeneratorController;
 use Illuminate\Support\ServiceProvider;
 
 class TheGeneratorServiceProvider extends ServiceProvider

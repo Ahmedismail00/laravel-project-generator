@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Isayama3\TheGenerator\Commands;
 
 use Illuminate\Routing\Console\ControllerMakeCommand;
 
