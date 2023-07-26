@@ -1,6 +1,6 @@
 <?php
 
-namespace TheGenerator\ModuleBuilder\Module;
+namespace Isayama3\TheGenerator\ModuleBuilder\Module;
 
 abstract class AbstarctComponent
 {

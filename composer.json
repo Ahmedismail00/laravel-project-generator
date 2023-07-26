@@ -25,7 +25,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "TheGenerator\\": "src"
+            "Isayama3\\TheGenerator\\": "src"
         }
     },
     

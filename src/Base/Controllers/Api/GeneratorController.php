@@ -1,11 +1,11 @@
 <?php
 
-namespace TheGenerator\Base\Controllers\Api;
+namespace Isayama3\TheGenerator\Base\Controllers\Api;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Http\FormRequest;
 use App\Http\Controllers\Controller;
-use TheGenerator\Base\Traits\SendResponse;
+use Isayama3\TheGenerator\Base\Traits\SendResponse;
 
 class GeneratorController extends Controller
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace TheGenerator\ModuleBuilder;
+namespace Isayama3\TheGenerator\ModuleBuilder;
 
 class Director
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace TheGenerator\ModuleBuilder\Module;
+namespace Isayama3\TheGenerator\ModuleBuilder\Module;
 
-use TheGenerator\ModuleBuilder\Module\AbstarctComponent;
+use Isayama3\TheGenerator\ModuleBuilder\Module\AbstarctComponent;
 
 class Route extends AbstarctComponent
 {

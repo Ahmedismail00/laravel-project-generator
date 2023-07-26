@@ -1,10 +1,10 @@
 <?php
 
-namespace TheGenerator\ModuleBuilder\Module;
+namespace Isayama3\TheGenerator\ModuleBuilder\Module;
 
 use Illuminate\Support\Facades\Artisan;
-use TheGenerator\ModuleBuilder;
-use TheGenerator\ModuleBuilder\Module\AbstarctComponent;
+use Isayama3\TheGenerator\ModuleBuilder;
+use Isayama3\TheGenerator\ModuleBuilder\Module\AbstarctComponent;
 
 class Controller extends AbstarctComponent
 {

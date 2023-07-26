@@ -1,9 +1,9 @@
 <?php
-namespace TheGenerator\ModuleBuilder;
+namespace Isayama3\TheGenerator\ModuleBuilder;
 
-use TheGenerator\ModuleBuilder\Module\Model;
-use TheGenerator\ModuleBuilder\Module\Route;
-use TheGenerator\ModuleBuilder\Module\Types\Module;
+use Isayama3\TheGenerator\ModuleBuilder\Module\Model;
+use Isayama3\TheGenerator\ModuleBuilder\Module\Route;
+use Isayama3\TheGenerator\ModuleBuilder\Module\Types\Module;
 
 abstract class Builder
 {

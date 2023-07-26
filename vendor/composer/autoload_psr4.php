@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'TheGenerator\\' => array($baseDir . '/src'),
+    'Isayama3\\TheGenerator\\' => array($baseDir . '/src'),
 );

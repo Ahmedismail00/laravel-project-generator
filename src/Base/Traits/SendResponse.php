@@ -1,6 +1,6 @@
 <?php
 
-namespace TheGenerator\Base\Traits;
+namespace Isayama3\TheGenerator\Base\Traits;
 
 use Illuminate\Support\Facades\Route;
 

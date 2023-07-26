@@ -1,15 +1,15 @@
 <?php
 
-namespace TheGenerator\ModuleBuilder\Builders;
+namespace Isayama3\TheGenerator\ModuleBuilder\Builders;
 
-use TheGenerator\ModuleBuilder\Builder;
-use TheGenerator\ModuleBuilder\Module\Controller;
-use TheGenerator\ModuleBuilder\Module\Model;
-use TheGenerator\ModuleBuilder\Module\Request;
-use TheGenerator\ModuleBuilder\Module\Route;
-use TheGenerator\ModuleBuilder\Module\Migration;
-use TheGenerator\ModuleBuilder\Module\Types\Module;
-use TheGenerator\ModuleBuilder\Module\Types\ApiModule;
+use Isayama3\TheGenerator\ModuleBuilder\Builder;
+use Isayama3\TheGenerator\ModuleBuilder\Module\Controller;
+use Isayama3\TheGenerator\ModuleBuilder\Module\Model;
+use Isayama3\TheGenerator\ModuleBuilder\Module\Request;
+use Isayama3\TheGenerator\ModuleBuilder\Module\Route;
+use Isayama3\TheGenerator\ModuleBuilder\Module\Migration;
+use Isayama3\TheGenerator\ModuleBuilder\Module\Types\Module;
+use Isayama3\TheGenerator\ModuleBuilder\Module\Types\ApiModule;
 
 class ModuleBuilder extends Builder
 {

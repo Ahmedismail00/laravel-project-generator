@@ -1,6 +1,6 @@
 <?php
 
-namespace TheGenerator\Base\Controllers\Web;
+namespace Isayama3\TheGenerator\Base\Controllers\Web;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Http\Controllers\Controller;
