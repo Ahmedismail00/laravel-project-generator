@@ -38,5 +38,6 @@
                 "Isayama3\\TheGenerator\\TheGeneratorServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
