@@ -18,7 +18,7 @@ class InitGenerator extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Initialize the generator package by adding the data folder and the example file to the project';
 
     /**
      * Create a new command instance.

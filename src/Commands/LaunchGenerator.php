@@ -20,7 +20,7 @@ class LaunchGenerator extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Launch the generator to start creating the module files based on the data files';
 
     /**
      * Execute the console command.

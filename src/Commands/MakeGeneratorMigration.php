@@ -16,6 +16,8 @@ class MakeGeneratorMigration extends Command
                             {--realpath : Indicate any provided migration file paths are pre-resolved absolute paths}
                             {--fullpath : Output the full path of the migration (Deprecated)}';
 
+    protected $description = 'create a new custom migration class for the generator';
+
     public function handle()
     {
         $customStubPath =  __DIR__ . '/../'.'../Helpers/Base/stubs'; // You can get this from a configuration or elsewhere.

@@ -8,6 +8,8 @@ class MakeGeneratorController extends ControllerMakeCommand
 {
     protected $signature = 'generator:controller {name} {--type=} {--api} {--requests} {--empty} {--invokable} {--resource} {--singleton} {--parent} {--model==} {--creatable}';
 
+    protected $description = 'create a new custom Controller class for the generator';
+
     protected function getStub()
     {
         $stub = null;
