@@ -15,7 +15,7 @@ class GeneratorController extends Controller
     
     public function __construct(FormRequest $request, Model $model)
     {
-        $this->request = $request->validated();
+        $this->request = $request->validated(); 
         $this->model = $model;
     }
 
