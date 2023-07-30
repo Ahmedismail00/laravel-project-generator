@@ -15,7 +15,7 @@ It's only one command and you are ready to start your application.
 
 You can install the package via composer:
 ```bash
- composer require isayama3/laravel-app-generator
+composer require isayama3/larave-project-generator
 ```
 
 ## Usage
