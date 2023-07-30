@@ -15,7 +15,7 @@ class GeneratorController extends Controller
     
     public function __construct(FormRequest $request, Model $model)
     {
-        $this->request = $request->validated(); 
+        $this->request = $request->validated();
         $this->model = $model;
     }
 
@@ -26,7 +26,7 @@ class GeneratorController extends Controller
 
     public function store()
     {
-        $this->model = $this->model->create($this->request->validated());
+        $this->model = $this->model->create($this->request);
         return $this->sendResponse(
             [],
             'successfully created.',
@@ -43,7 +43,7 @@ class GeneratorController extends Controller
     public function update($id)
     {
         $model = $this->model->find($id);
-        $model->update($this->request->validated());
+        $model->update($this->request);
         $this->model = $model;
 
         return $this->sendResponse([]);
