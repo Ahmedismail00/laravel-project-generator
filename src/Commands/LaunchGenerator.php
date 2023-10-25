@@ -3,8 +3,8 @@
 namespace Isayama3\TheGenerator\Commands;
 
 use Illuminate\Console\Command;
-use TheGenerator\ModuleBuilder\Builders\ModuleBuilder;
-use TheGenerator\ModuleBuilder\Director;
+use Isayama3\TheGenerator\ModuleBuilder\Builders\ModuleBuilder;
+use Isayama3\TheGenerator\ModuleBuilder\Director;
 
 class LaunchGenerator extends Command
 {

@@ -13,6 +13,6 @@ class MakeGeneratorRequest extends RequestMakeCommand
 
     protected function getStub()
     {
-        return base_path('/stubs/request.generator.stub');
+        return base_path('vendor/isayama3/larave-project-generator/src/Base/stubs/request.generator.stub');
     }
 }

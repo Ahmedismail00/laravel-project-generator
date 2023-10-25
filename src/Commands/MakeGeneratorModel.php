@@ -13,6 +13,6 @@ class MakeGeneratorModel extends ModelMakeCommand
 
     protected function getStub()
     {
-        return base_path('/stubs/model.generator.stub');
+        return base_path('vendor/isayama3/larave-project-generator/src/stubs/model.generator.stub');
     }
 }

@@ -3,6 +3,7 @@
 namespace Isayama3\TheGenerator\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Artisan;
 
 class InitGenerator extends Command
 {
@@ -43,5 +44,6 @@ class InitGenerator extends Command
         // Todo:: change the first path of the copy function to the path of the file in the package
         copy(base_path('vendor/isayama3/larave-project-generator/src/Base/data/example.php'), base_path('data/example.php'));
 
+        Artisan::call('stub:publish');
     }
 }
