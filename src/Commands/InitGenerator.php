@@ -41,7 +41,7 @@ class InitGenerator extends Command
             mkdir(base_path('data'), 0777, true);
         }
         // Todo:: change the first path of the copy function to the path of the file in the package
-        copy(app_path('Helpers/Base/data/example.php'), base_path('data/example.php'));
+        copy(base_path('vendor/isayama3/larave-project-generator/src/Base/data/example.php'), base_path('data/example.php'));
 
     }
 }
