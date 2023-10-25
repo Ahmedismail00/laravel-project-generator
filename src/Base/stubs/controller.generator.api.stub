@@ -4,7 +4,7 @@ namespace {{ namespace }};
 
 use {{ namespacedModel }} as Model;
 use App\Http\Requests\Api\{{model}}Request as FormRequest;
-use TheGenerator\Base\Controllers\Api\GeneratorController;
+use Isayama3\TheGenerator\Base\Controllers\Api\GeneratorController;
 
 
 class {{ class }} extends GeneratorController
